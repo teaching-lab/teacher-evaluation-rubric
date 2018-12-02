@@ -1,3 +1,7 @@
+# Temporarily ignore all TeX and PDF files
+*.pdf
+*.tex
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
