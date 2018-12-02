@@ -40,7 +40,8 @@
 % Source: https://tex.stackexchange.com/questions/63390/how-to-decrease-spacing-before-chapter-title
 \titleformat{\section}[display]{\LARGE\bfseries}{\sectionname}{}{}
 \titlespacing*{\section}{0em}{0.5em}{0em}
-\titlespacing*{\subsection}{0em}{0.5em}{0em}
+\titleformat{\subsection}[display]{\normalsize\bfseries}{\sectionname}{}{}
+\titlespacing*{\subsection}{0em}{0.5em}{-0.5em}
 
 % Remove headers and position page number in the bottom mid
 \pagestyle{empty}
@@ -108,24 +109,24 @@
 
 \begin{onehalfspace}
 \large 
-Následující strany obsahují tzv. rubriku činností učitele. Touto rubrikou by tvůj cvičící (\teacherName) chtěl zjistit, jak vnímáš jeho/její schopnosti. Pro každou níže uvedenou učitelskou schopnost si přečti popisky \textit{Neznalý}/\textit{Začátečník}/\textit{Guru}, zamysli se, jak na tom tvůj cvičící je a zaznač to do nabídnuté škály. Celý dotazník je anonymní a zabere asi 10 minut. Odpovědi použije \teacherName a vyučující kurzu pro cvičící \textit{Teaching Lab} pro zlepšení své výuky.
+Následující strany obsahují tzv. učitelskou rubriku. Touto rubrikou by tvůj cvičící (\teacherName) chtěl zjistit, jak vnímáš jeho/její schopnosti. Pro každou níže uvedenou učitelskou schopnost si přečti popisky \textit{Neznalý}, \textit{Začátečník} a \textit{Guru}. Pak se zamysli, jak na tom tvůj cvičící je a zaznač to do nabídnuté škály. Celý dotazník je anonymní a zabere asi 10 minut. Odpovědi použije \teacherName ve spolupráci s vyučujícími kurzu pro cvičící \textit{Teaching Lab} pro zlepšení své výuky a výzkum kolem lepší výuky informatiky obecně.
 \end{onehalfspace}
 \bigskip
 
 \begin{multicols*}{2}
 
 \rubriccriterion{Cíle hodiny, vědomá pozornost}
-{\teacherName nemá ve výuce jasně stanovené cíle. Když učí, nevnímá, co se děje a kam směřujeme. Často působí ztraceně.}
-{\teacherName si někdy uvědomuje, jaký má cíl, co právě dělá a jaký to bude mít efekt. Většinou ale při výuce nemá vědomou pozornost.}
-{Během výuky si \teacherName téměř vždy uvědomuje, jaký cíl sleduje, co se skupinou děje, co dělá a jaký to bude mít efekt. Ví, jak jsme se dostali tam, kde právě jsme.}
+{\teacherName působí, že nemá ve výuce jasně stanovené cíle. Když učí, vypadá, že nevnímá, co se děje a kam směřujeme. Často působí ztraceně.}
+{\teacherName vypadá, že si někdy uvědomuje, jaký má cíl, co právě dělá a jaký to bude mít efekt. Vypadá ale, že většinou při výuce nemá vědomou pozornost.}
+{Během výuky \teacherName působú, že téměř vždy uvědomuje, jaký cíl sleduje, co se skupinou děje, co dělá a jaký to bude mít efekt. Ví, jak jsme se dostali tam, kde právě jsme.}
 
 \vfill
 \rule{\columnwidth}{0.4pt}
 \vfill
 
 \rubriccriterion{Interakce se skupinou, kladení otázek skupině}
-{\teacherName se skupinou neinteraguje. Neptá se a neví, jak studenty zapojit.}
-{\teacherName ví, že lze interagovat se skupinou a zná nástroje (chápe, jak by to šlo). Nedokáže je ale dobře používat. Někdy se skupiny ptá, ale nedostává odpověď.}
+{\teacherName se skupinou neinteraguje. Neptá se a vypadá, že neví, jak studenty zapojit.}
+{\teacherName ví, že lze interagovat se skupinou a vypadá, že zná nástroje (chápe, jak by to šlo). Nedokáže je ale dobře používat. Někdy se skupiny ptá, ale nedostává odpověď.}
 {\teacherName se skupinou často a efektivně interaguje. Ptá se způsobem, který studenty aktivizuje a zapojuje. Situace, kdy nedostává od skupiny odpověď dokáže obratně řešit (např. přeformulováním otázky).}
 
 \vfill
@@ -133,15 +134,15 @@ Následující strany obsahují tzv. rubriku činností učitele. Touto rubrikou
 \vfill
 
 \rubriccriterion{Strukturování výuky}
-{O strukturování výuky \teacherName vůbec nepřemýšlí.}
-{\teacherName chápe smysl přehledného strukturování své hodiny a snaží se o to. Často se ale zamotá, ztratí nit, nebo řeší více věcí naráz a studenti se pak ztrácí nebo odpojují.}
+{\teacherName vypadá, že o strukturování výuky vůbec nepřemýšlí.}
+{\teacherName působí, že chápe smysl přehledného strukturování své hodiny a snaží se o to. Často se ale zamotá, ztratí nit, nebo řeší více věcí naráz a studenti se pak ztrácí nebo odpojují.}
 {Hodiny, které vede \teacherName mají jasnou strukturu. Studenti ví, co se právě děje, co bude následovat a chápou návaznosti. Mezi jednotlivými bloky vědomě dělá zřetelné přechody.}
 
 \columnbreak
 
 \rubriccriterion{Vlastní pocity a spokojenost s výukou}
-{\teacherName působí nespokojeně se svými hodinami. Netěší se do výuky.}
-{\teacherName si ve výuce často moc nevěří. Někdy mu/jí vyjdou části hodiny, ale často působí napjatě nebo má strach, že něco pokazí.}
+{\teacherName působí nespokojeně se svými hodinami. Vypadá, že se netěší do výuky.}
+{\teacherName vypadá, že si ve výuce často moc nevěří. Někdy mu/jí vyjdou části hodiny, ale často působí napjatě nebo má strach, že něco pokazí.}
 {\teacherName ve výuce působí uvolněně a sebevědomě. Baví ho/ji to a má svůj styl.}
 
 \vfill
@@ -158,65 +159,77 @@ Následující strany obsahují tzv. rubriku činností učitele. Touto rubrikou
 \vfill
 
 \rubriccriterion{Jasné zadávání pokynů a úloh}
-{\teacherName nijak zvlášť nepřemýšlí o tom, jak zadávat pokyny nebo úlohy.}
+{\teacherName působí, že nijak zvlášť nepřemýšlí o tom, jak zadávat pokyny nebo úlohy.}
 {Stává se, že \teacherName zadá pokyn nebo úlohu a studenti neví, co dělat, jak začít nebo k čemu mají dojít (co má být výsledkem).}
 {Když \teacherName zadává pokyn nebo úlohu, studenti mají jasno v tom, co dělat, jak začít nebo k čemu mají dojít.}
 
 \newpage
 
 \rubriccriterion{Variabilita a inovace ve výuce}
-{\teacherName učí tak, jak mu/ji řekli nebo kopíruje výuku, kterou zažil(a). Nepřemýšlí o jiných variantách.}
-{\teacherName si uvědomuje, že existuje mnoho typů aktivit, které lze při výuce použít. Nezná jich ale dostatek, nedokáže je efektivně zadávat, nebo nemá jasno v tom, proč je používat.}
+{\teacherName působí, že učí tak, jak mu/ji řekli nebo kopíruje výuku, kterou zažil(a). Vypadá to, že nepřemýšlí o jiných variantách.}
+{\teacherName vypadá, že si uvědomuje, že existuje mnoho typů aktivit, které lze při výuce použít. Nezná jich ale dostatek, nedokáže je efektivně zadávat, nebo nemá jasno v tom, proč je používat.}
 {\teacherName zná mnoho různých aktivit a výuku skládá tak, aby byla dostatečně pestrá. Vybrané aktivity efektivně procvičují probíranou látku. \teacherName zároveň studenty efektivně zapojuje a zvyšuje jejich motivaci se učit.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Širší kontext výuky}
-{O širším kontextu výuky a kurzu \teacherName nepřemýšlí.}
-{\teacherName neví, v jakém kontextu studenti využijí znalosti a dovednosti, které učí. Nevidí propojení s dalšími kurzy.}
-{\teacherName má jasnou představu o tom, k čemu studenty vede (jaké dovednosti rozvíjí, jaké znalosti chce předat). Ví, proč tyto dovednosti rozvíjí a v jakém kontextu je studenti v budoucnu použijí. Vidí širší kontext.}
+{\teacherName vypadá, že o širším kontextu výuky a kurzu nepřemýšlí.}
+{\teacherName působí, že neví, v jakém kontextu studenti využijí znalosti a dovednosti, které učí. Nevidí propojení s dalšími kurzy.}
+{\teacherName vypadá, že má jasnou představu o tom, k čemu studenty vede (jaké dovednosti rozvíjí, jaké znalosti chce předat). Ví, proč tyto dovednosti rozvíjí a v jakém kontextu je studenti v budoucnu použijí. Vidí širší kontext.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Jasné vysvětlování}
-{\teacherName svoje způsoby vysvětlování nijak nereflektuje.}
-{Když \teacherName vysvětluje, běžně se stává, že si není jistý, zda vysvětluje dobře a zda to studentům pomáhá při pochopení.}
-{Když \teacherName vysvětluje teorii, demonstruje řešení a efektivně opravuje chyby. Dokáže se dobře vžít do toho, jak to vidí student a efektivně pomáhá studentům pochopit problém. Nestává se, že by vysvětloval(a) něco, na co se studenti neptali.}
+{\teacherName působí, že svoje způsoby vysvětlování nijak nereflektuje.}
+{Když \teacherName vysvětluje, běžně vypadá, že si není jistý, zda vysvětluje dobře a zda to studentům pomáhá při pochopení.}
+{Když \teacherName vysvětluje teorii, demonstruje řešení a efektivně opravuje chyby. Vypadá to, že se dokáže dobře vžít do toho, jak to vidí student a efektivně pomáhá studentům pochopit problém. Nestává se, že by vysvětloval(a) něco, na co se studenti neptali.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Nastavení prostředí, systémy ve výuce}
-{\teacherName o atmosféře ve výuce nepřemýšlí.}
-{\teacherName přemýšlí o nastavení pravidel i atmosféry. Nemá ale jasno v efektech těchto pravidel.}
-{\teacherName umí ve výuce vytvořit prostředí, které podporuje efektivní učení. U systémů, které používá (např. bodování, bonbóny, zahajovací rituály) chápe efekt a uzpůsobuje je podle svých potřeb.}
+{\teacherName vypadá, že o atmosféře ve výuce nepřemýšlí.}
+{\teacherName působí, že přemýšlí o nastavení pravidel i atmosféry. Nemá ale jasno v efektech těchto pravidel.}
+{\teacherName umí ve výuce vytvořit prostředí, které podporuje efektivní učení. U systémů, které používá (např. bodování, bonbóny, zahajovací rituály) působí, že chápe efekt a uzpůsobuje je podle svých potřeb.}
 
 \columnbreak
 
 \rubriccriterion{Flexibilita, přizpůsobování výuky na místě}
 {Na situace vzniklé v průběhu výuky \teacherName nijak vědomě nereaguje.}
-{\teacherName si uvědomuje chvíle, kdy by mohlo být zajímavé nebo užitečné dělat něco jiného, než měl(a) v plánu. Většinou ale nedokáže v daný moment vhodně zareagovat.}
+{\teacherName působí, že si uvědomuje chvíle, kdy by mohlo být zajímavé nebo užitečné dělat něco jiného, než měl(a) v plánu. Většinou ale nedokáže v daný moment vhodně zareagovat.}
 {\teacherName dokáže svoji výuku průběžně přizpůsobovat tomu, co se právě děje ve skupině a co studenti potřebují. Má k tomu dostatek nástrojů a dokáže je efektivně použít.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Individuální interakce se studenty}
 {\teacherName nedělá konzultace nebo jiné indidivuální interakce.}
 {Stává se, že \teacherName si často neví rady při individuální interakci se studentem (např. zkoušení u tabule, konzultace). Interakce neprobíhá efektivně nebo se student cítí zastrašen.}
 {Při interakcích s jednotlivci (např. zkoušení, konzultace) \teacherName efektivně využívá čas. Studenti konzultují rádi a je to pro ně užitečné. Z učitele cítí respekt a podporu.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Skupinová práce, management skupiny}
 {\teacherName nedělí skupinu do menších skupinek.}
-{\teacherName si uvědomuje možnosti práce ve dvojicích či menších skupinách. Tuší, že bych toho mohl(a) lépe využívat, hledá jak.}
-{\teacherName má jasno v tom, kdy chce pracovat s celou skupinou, kdy s jednotlivci a kdy se skupinkami. Rozdělení do menších skupin efektivně používá, když je to potřeba. Ve vhodných případech zadává interakce mezi skupinami.}
+{\teacherName vypadá, že si uvědomuje možnosti práce ve dvojicích či menších skupinách. Vypadá to, že tuší, že by toho mohl(a) lépe využívat, hledá jak.}
+{\teacherName působí, že má jasno v tom, kdy chce pracovat s celou skupinou, kdy s jednotlivci a kdy se skupinkami. Rozdělení do menších skupin efektivně používá, když je to potřeba. Ve vhodných případech zadává interakce mezi skupinami.}
 
+\vfill
 \rule{\columnwidth}{0.4pt}
+\vfill
 
 \rubriccriterion{Čtení atmosféry ve skupině}
-{Skupinu ve své výuce \teacherName nesleduje, pozornost věnuje pouze obsahu.}
-{\teacherName si uvědomuje, že mu/ji skupina vysílá signály a že by bylo dobré jim rozumět a využít je pro efektivní vedení výuky. Ve výuce to ale dokáže jen výjimečně.}
-{\teacherName dokáže dobře odhadnout naladění skupiny. Má jasno v tom, co se ve skupině studentů děje (např. únava, nadšení, obava).}
+{\teacherName působí, že skupinu ve své výuce nesleduje, pozornost věnuje pouze obsahu.}
+{\teacherName vypadá, že si uvědomuje, že mu/ji skupina vysílá signály a že by bylo dobré jim rozumět a využít je pro efektivní vedení výuky. Ve výuce to ale dokáže jen výjimečně.}
+{\teacherName dokáže dobře odhadnout naladění skupiny. Vypadá, že má jasno v tom, co se ve skupině studentů děje (např. únava, nadšení, obava).}
 
 \end{multicols*}
 
