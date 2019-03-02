@@ -1,7 +1,11 @@
 Teacher Evaluation Rubric
 =========================
 
-An evaluation rubric is a self-assessment tool helping you see and describe your knowledge, skills, and abilities. Firstly, it helps you perceive and name all the fundamental parts of a concept (e.g., being able to program means being able to design an algorithm, work with memory effectively, know the syntax, . . . ). Secondly, it enables you to evaluate your competence in these parts (e.g., I’m able to design a working algorithm, though I find it problematic to express it in code and I don’t optimize memory usage at all). 
+An evaluation rubric is a self-assessment tool helping you see and describe your knowledge, skills, and abilities. Firstly, it helps you perceive and name all the fundamental parts of a concept (e.g., being able to program means being able to design an algorithm, work with memory effectively, know the syntax, ...). Secondly, it enables you to evaluate your competence in these parts (e.g., I’m able to design a working algorithm, though I find it problematic to express it in code and I don’t optimize memory usage at all). 
+
+## Current state
+
+The full rubric (both Czech and English) can be found in the [Teacher's Reflective Diary](https://github.com/teaching-lab/reflective-diary). This repository contains utility scripts to custom-tailor rubrics using teacher names. However, this functionality is currently only available in Czech.
 
 ## Licence
 
